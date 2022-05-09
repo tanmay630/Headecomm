@@ -1,4 +1,4 @@
-import { sendAndConfirmRawTransaction } from "@solana/web3.js";
+
 import React,{createContext, useContext, useState, useEffect} from "react";
 import {toast} from 'react-hot-toast';
 
@@ -71,8 +71,6 @@ const StateContext = ({children}) => {
       setCartItems(newCartItems);
     }
   
-
-      
 
     const incQty = () => {
         setQty((prevQty) => prevQty + 1);
